@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 public @interface XmlElement {
     String  term();
     String  btRef();
+    Class   type();
     int     order();
     int     min();
     int     max();
