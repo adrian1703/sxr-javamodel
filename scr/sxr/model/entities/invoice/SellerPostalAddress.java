@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "cac:PostalAddress", btRef = "BG-5", type = SellerPostalAddress.class, order = 3, min = 1, max = 1 )
+@XmlElement(term = "cac:PostalAddress", btRef = "BG-5", type = SellerPostalAddress.class, order = -1, min = 1, max = 1 )
 public class SellerPostalAddress extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:StreetName", btRef = "BT-35", type = String.class, order = 0, min = 0, max = 1 )

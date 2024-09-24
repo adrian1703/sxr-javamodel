@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "cac:PostalAddress", btRef = "BG-8", type = BuyerPostalAddress.class, order = 3, min = 1, max = 1 )
+@XmlElement(term = "cac:PostalAddress", btRef = "BG-8", type = BuyerPostalAddress.class, order = -1, min = 1, max = 1 )
 public class BuyerPostalAddress extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:StreetName", btRef = "BT-50", type = String.class, order = 0, min = 0, max = 1 )
@@ -19,9 +19,9 @@ public class BuyerPostalAddress extends SxrObject {
 	public String buyerCountrySubdivision;
 
 	/* =========== Complex Properties =========== */
-	@XmlElement(term = "cac:AddressLine", btRef = "null", type = AddressLine.class, order = 5, min = 0, max = 1 )
-	public AddressLine addressLine;
-	@XmlElement(term = "cac:Country", btRef = "null", type = Country.class, order = 6, min = 1, max = 1 )
-	public Country country;
+	@XmlElement(term = "cac:AddressLine", btRef = "null", type = AddressLine1.class, order = 5, min = 0, max = 1 )
+	public AddressLine1 addressLine1;
+	@XmlElement(term = "cac:Country", btRef = "null", type = Country1.class, order = 6, min = 1, max = 1 )
+	public Country1 country1;
 
 }

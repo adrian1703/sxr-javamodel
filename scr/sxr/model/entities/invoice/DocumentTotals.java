@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "cac:LegalMonetaryTotal", btRef = "BG-22", type = DocumentTotals.class, order = 30, min = 1, max = 1 )
+@XmlElement(term = "cac:LegalMonetaryTotal", btRef = "BG-22", type = DocumentTotals.class, order = -1, min = 1, max = 1 )
 public class DocumentTotals extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:LineExtensionAmount", btRef = "BT-106", type = Float.class, order = 0, min = 1, max = 1 )

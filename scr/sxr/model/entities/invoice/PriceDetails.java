@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "cac:Price", btRef = "BG-29", type = PriceDetails.class, order = 10, min = 1, max = 1 )
+@XmlElement(term = "cac:Price", btRef = "BG-29", type = PriceDetails.class, order = -1, min = 1, max = 1 )
 public class PriceDetails extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:PriceAmount", btRef = "BT-146", type = Float.class, order = 0, min = 1, max = 1 )

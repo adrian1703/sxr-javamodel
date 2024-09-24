@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "cac:PartyTaxScheme", btRef = "null", type = PartyVatTaxIdentifiers.class, order = 4, min = 0, max = 2 )
+@XmlElement(term = "cac:PartyTaxScheme", btRef = "null", type = PartyVatTaxIdentifiers.class, order = -1, min = 0, max = 2 )
 public class PartyVatTaxIdentifiers extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:CompanyID", btRef = "BT-31, BT-32", type = String.class, order = 0, min = 1, max = 1 )

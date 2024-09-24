@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "cac:Delivery", btRef = "BG-13", type = DeliveryInformation.class, order = 25, min = 0, max = 1 )
+@XmlElement(term = "cac:Delivery", btRef = "BG-13", type = DeliveryInformation.class, order = -1, min = 0, max = 1 )
 public class DeliveryInformation extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:ActualDeliveryDate", btRef = "BT-72", type = java.util.Date.class, order = 0, min = 0, max = 1 )

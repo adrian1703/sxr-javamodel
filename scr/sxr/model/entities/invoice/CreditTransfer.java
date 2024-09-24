@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "cac:PayeeFinancialAccount", btRef = "BG-17", type = CreditTransfer.class, order = 3, min = 0, max = 1 )
+@XmlElement(term = "cac:PayeeFinancialAccount", btRef = "BG-17", type = CreditTransfer.class, order = -1, min = 0, max = 1 )
 public class CreditTransfer extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:ID", btRef = "BT-84", type = String.class, order = 0, min = 1, max = 1 )

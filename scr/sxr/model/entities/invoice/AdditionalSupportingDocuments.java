@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "cac:AdditionalDocumentReference", btRef = "BG-24", type = AdditionalSupportingDocuments.class, order = 19, min = 0, max = -1 )
+@XmlElement(term = "cac:AdditionalDocumentReference", btRef = "BG-24", type = AdditionalSupportingDocuments.class, order = -1, min = 0, max = -1 )
 public class AdditionalSupportingDocuments extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:ID", btRef = "BT-18, BT-122", type = String.class, order = 0, min = 1, max = 1 )
