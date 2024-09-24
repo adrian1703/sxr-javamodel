@@ -4,7 +4,7 @@ import sxr.model.interfaces.*;
 import sxr.model.codes.*;
 import java.util.List;
 
-@XmlElement(term = "null", btRef = "null", type = Invoice, order = -1, min = 1, max = 1 )
+@XmlElement(term = "null", btRef = "null", type = Invoice.class, order = -1, min = 1, max = 1 )
 public class Invoice extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:CustomizationID", btRef = "BT-24", type = String.class, order = 0, min = 1, max = 1 )
