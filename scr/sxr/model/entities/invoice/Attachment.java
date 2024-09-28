@@ -7,10 +7,10 @@ import java.util.List;
 @XmlElement(term = "cac:Attachment", btRef = "null", type = Attachment.class, order = -1, min = 0, max = 1 )
 public class Attachment extends SxrObject {
 	/* =========== Basic Properties   =========== */
-	@XmlAttribute( term = "mimeCode", btRef = "null", type = Object.class, parent = "attachedDocument")
-	public Object attachedDocument_mimeCode;
-	@XmlAttribute( term = "filename", btRef = "null", type = Object.class, parent = "attachedDocument")
-	public Object attachedDocument_filename;
+	@XmlAttribute( term = "mimeCode", btRef = "null", type = String.class, parent = "attachedDocument")
+	public String attachedDocument_mimeCode;
+	@XmlAttribute( term = "filename", btRef = "null", type = String.class, parent = "attachedDocument")
+	public String attachedDocument_filename;
 	@XmlElement(term = "cbc:EmbeddedDocumentBinaryObject", btRef = "BT-125", type = byte[].class, order = 0, min = 0, max = 1 )
 	public byte[] attachedDocument;
 

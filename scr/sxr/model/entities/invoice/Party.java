@@ -7,8 +7,8 @@ import java.util.List;
 @XmlElement(term = "cac:Party", btRef = "null", type = Party.class, order = -1, min = 1, max = 1 )
 public class Party extends SxrObject {
 	/* =========== Basic Properties   =========== */
-	@XmlAttribute( term = "schemeID", btRef = "null", type = Object.class, parent = "sellerElectronicAddress")
-	public Object sellerElectronicAddress_schemeID;
+	@XmlAttribute( term = "schemeID", btRef = "null", type = String.class, parent = "sellerElectronicAddress")
+	public String sellerElectronicAddress_schemeID;
 	@XmlElement(term = "cbc:EndpointID", btRef = "BT-34", type = String.class, order = 0, min = 1, max = 1 )
 	public String sellerElectronicAddress;
 
