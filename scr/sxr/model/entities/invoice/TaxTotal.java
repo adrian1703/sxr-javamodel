@@ -7,8 +7,9 @@ import java.util.List;
 @XmlElement(term = "cac:TaxTotal", btRef = "null", type = TaxTotal.class, order = -1, min = 1, max = 2 )
 public class TaxTotal extends SxrObject {
 	/* =========== Basic Properties   =========== */
+	@XmlAttribute( term = "currencyID", btRef = "null", type = Object.class, parent = "invoiceTotalVatAmountInvoiceTotalVatAmountInAccountingCurrency")
+	public Object invoiceTotalVatAmountInvoiceTotalVatAmountInAccountingCurrency_currencyID;
 	@XmlElement(term = "cbc:TaxAmount", btRef = "BT-110, BT-111", type = Float.class, order = 0, min = 1, max = 1 )
-	@XmlAttribute( term = "currencyID" )
 	public float invoiceTotalVatAmountInvoiceTotalVatAmountInAccountingCurrency;
 
 	/* =========== Complex Properties =========== */

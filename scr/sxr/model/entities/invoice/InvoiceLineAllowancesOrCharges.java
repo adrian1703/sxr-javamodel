@@ -15,11 +15,13 @@ public class InvoiceLineAllowancesOrCharges extends SxrObject {
 	public String lineLevelAllowanceOrChargeReason;
 	@XmlElement(term = "cbc:MultiplierFactorNumeric", btRef = "BT-138,BT-143", type = Integer.class, order = 3, min = 0, max = 1 )
 	public int lineLevelAllowanceOrChargePercentage;
+	@XmlAttribute( term = "currencyID", btRef = "null", type = Object.class, parent = "lineLevelAllowanceOrChargeAmount")
+	public Object lineLevelAllowanceOrChargeAmount_currencyID;
 	@XmlElement(term = "cbc:Amount", btRef = "BT-136,BT-141", type = Float.class, order = 4, min = 1, max = 1 )
-	@XmlAttribute( term = "currencyID" )
 	public float lineLevelAllowanceOrChargeAmount;
+	@XmlAttribute( term = "currencyID", btRef = "null", type = Object.class, parent = "lineLevelAllowanceOrChargeBaseAmount")
+	public Object lineLevelAllowanceOrChargeBaseAmount_currencyID;
 	@XmlElement(term = "cbc:BaseAmount", btRef = "BT-137,BT-142", type = Float.class, order = 5, min = 0, max = 1 )
-	@XmlAttribute( term = "currencyID" )
 	public float lineLevelAllowanceOrChargeBaseAmount;
 
 	/* =========== Complex Properties =========== */

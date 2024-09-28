@@ -11,11 +11,13 @@ public class InvoiceLine extends SxrObject {
 	public String invoiceLineIdentifier;
 	@XmlElement(term = "cbc:Note", btRef = "BT-127", type = String.class, order = 1, min = 0, max = 1 )
 	public String invoiceLineNote;
+	@XmlAttribute( term = "unitCode", btRef = "null", type = Unecerec20.class, parent = "invoicedQuantity")
+	public Unecerec20 invoicedQuantity_unitCode;
 	@XmlElement(term = "cbc:InvoicedQuantity", btRef = "BT-129", type = Integer.class, order = 2, min = 1, max = 1 )
-	@XmlAttribute( term = "unitCode" )
 	public int invoicedQuantity;
+	@XmlAttribute( term = "currencyID", btRef = "null", type = Object.class, parent = "invoiceLineNetAmount")
+	public Object invoiceLineNetAmount_currencyID;
 	@XmlElement(term = "cbc:LineExtensionAmount", btRef = "BT-131", type = Float.class, order = 3, min = 1, max = 1 )
-	@XmlAttribute( term = "currencyID" )
 	public float invoiceLineNetAmount;
 	@XmlElement(term = "cbc:AccountingCost", btRef = "BT-133", type = String.class, order = 4, min = 0, max = 1 )
 	public String invoiceLineBuyerAccountingReference;

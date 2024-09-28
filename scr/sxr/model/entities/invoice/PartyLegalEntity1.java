@@ -9,8 +9,9 @@ public class PartyLegalEntity1 extends SxrObject {
 	/* =========== Basic Properties   =========== */
 	@XmlElement(term = "cbc:RegistrationName", btRef = "BT-44", type = String.class, order = 0, min = 1, max = 1 )
 	public String buyerName;
+	@XmlAttribute( term = "schemeID", btRef = "null", type = Object.class, parent = "buyerLegalRegistrationIdentifier")
+	public Object buyerLegalRegistrationIdentifier_schemeID;
 	@XmlElement(term = "cbc:CompanyID", btRef = "BT-47", type = String.class, order = 1, min = 0, max = 1 )
-	@XmlAttribute( term = "schemeID" )
 	public String buyerLegalRegistrationIdentifier;
 
 	/* =========== Complex Properties =========== */

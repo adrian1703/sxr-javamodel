@@ -15,11 +15,13 @@ public class DocumentLevelAllowancesAndCharges extends SxrObject {
 	public String documentLevelAllowanceOrChargeReason;
 	@XmlElement(term = "cbc:MultiplierFactorNumeric", btRef = "BT-94,BT-101", type = Integer.class, order = 3, min = 0, max = 1 )
 	public int documentLevelAllowanceOrChargePercentage;
+	@XmlAttribute( term = "currencyID", btRef = "null", type = Object.class, parent = "documentLevelAllowanceOrChargeAmount")
+	public Object documentLevelAllowanceOrChargeAmount_currencyID;
 	@XmlElement(term = "cbc:Amount", btRef = "BT-92,BT-99", type = Float.class, order = 4, min = 1, max = 1 )
-	@XmlAttribute( term = "currencyID" )
 	public float documentLevelAllowanceOrChargeAmount;
+	@XmlAttribute( term = "currencyID", btRef = "null", type = Object.class, parent = "documentLevelAllowanceOrChargeBaseAmount")
+	public Object documentLevelAllowanceOrChargeBaseAmount_currencyID;
 	@XmlElement(term = "cbc:BaseAmount", btRef = "BT-93,BT-100", type = Float.class, order = 5, min = 0, max = 1 )
-	@XmlAttribute( term = "currencyID" )
 	public float documentLevelAllowanceOrChargeBaseAmount;
 
 	/* =========== Complex Properties =========== */

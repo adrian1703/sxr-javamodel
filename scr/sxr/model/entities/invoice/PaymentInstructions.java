@@ -7,8 +7,9 @@ import java.util.List;
 @XmlElement(term = "cac:PaymentMeans", btRef = "BG-16", type = PaymentInstructions.class, order = -1, min = 0, max = -1 )
 public class PaymentInstructions extends SxrObject {
 	/* =========== Basic Properties   =========== */
+	@XmlAttribute( term = "name", btRef = "null", type = String.class, parent = "paymentMeansTypeCode")
+	public String paymentMeansTypeCode_name;
 	@XmlElement(term = "cbc:PaymentMeansCode", btRef = "BT-81", type = Uncl4461.class, order = 0, min = 1, max = 1 )
-	@XmlAttribute( term = "name" )
 	public Uncl4461 paymentMeansTypeCode;
 	@XmlElement(term = "cbc:PaymentID", btRef = "BT-83", type = String.class, order = 1, min = 0, max = 1 )
 	public String remittanceInformation;
