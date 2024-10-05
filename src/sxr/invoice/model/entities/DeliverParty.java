@@ -1,8 +1,9 @@
 /*********** GENERATED - DO NOT MODIFY ***********/
 package sxr.invoice.model.entities;
 import sxr.core.model.entities.SxrObject;
-import sxr.core.model.interfaces.XmlElement;
-import sxr.invoice.ubl.codes.*;
+import sxr.core.model.interfaces.*;
+import sxr.core.model.codes.*;
+import java.util.List;
 
 @XmlElement(term = "cac:DeliveryParty", btRef = "null", type = DeliverParty.class, order = -1, min = 0, max = 1 )
 public class DeliverParty extends SxrObject {
