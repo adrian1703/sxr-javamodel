@@ -1,0 +1,18 @@
+plugins{
+    id 'sxr-core.groovy-conventions'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test/groovy']
+        }
+    }
+}
+
+tasks.register('myCustomTask', MyCustomTask)
